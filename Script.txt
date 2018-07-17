@@ -1,0 +1,23 @@
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -v 2.1.0
+Scaffold-DbContext "Data Source=DELL09\SQLEXPRESS;Initial Catalog=DBBaseReact;Persist Security Info=true;User Id=sa;Password=p81bG8f7;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables AdmArea
+
+-----------------------------------------
+-- VISUAL CODE 
+-----------------------------------------
+dotnet new react -o my-new-app
+cd ClientApp
+dotnet run 
+dotnet ef dbcontext scaffold  "Data Source=DELL09\SQLEXPRESS;Initial Catalog=DBBaseReact;Persist Security Info=true;User Id=sa;Password=p81bG8f7;" Microsoft.EntityFrameworkCore.SqlServer -o  Models
+--> Agregar Carpeta DataAcces
+-->Agregar Metodos genericos por cada clase NombreTabla+DataLayer.cs
+-->Agregar Controller
+-->Agregar Componente
+-->Agregar en NavMenu el link a la nueva ruta.
+-->Exponer la ruta en App.js
+
+-----------------------------------
+--INSTALAR PAQUETE
+-----------------------------------
+npm install --save <package_name>
+
